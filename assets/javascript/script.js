@@ -21,7 +21,7 @@ function startQuiz() {
 }
 // The startTimer function starts the timer and subtracts time from it users' answers are incorrect
 function startTimer() {
-    timerCount = 120;
+    timerCount = 20;
     timer = setInterval(function () {
         timerCount--;
         timeElement.textContent = timerCount;
@@ -30,7 +30,6 @@ function startTimer() {
           // Clears interval and stops timer
           clearInterval(timer);
         }  
-     
     }, 1000);
 }
 
